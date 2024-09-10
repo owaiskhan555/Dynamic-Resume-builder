@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make your resume</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <div id="dynamic-resume-Builder">
+        <!-- New Form Section -->
+<section id="form-section">
+<form id="resume-form">
+<h2>Personal Information</h2>
+<label for="name">Name:</label>
+<input type="text" id="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+<label for="phone">Phone:</label>
+<input type="text" id="phone" required>
+
+<h2>Education</h2>
+<label for="education">Education:</label>
+<textarea id="education" rows="4" placeholder="e.g., B.Sc in Computer Science from XYZ University"></textarea>
+
+<h2>Work Experience</h2>
+<label for="experience">Work Experience:</label>
+<textarea id="experience" rows="4" placeholder="e.g., Software Engineer at ABC Corp (2020-2023)"></textarea>
+
+<h2>Skills</h2>
+<label for="skills">Skills:</label>
+<input type="text" id="skills" placeholder="e.g., JavaScript, React, CSS">
+<button id="generateResumeBtn" type="button" onclick="generateResume()">Generate Resume</button>
+</form>
+</section>
+</div>
+
+
+
+<!-- Include jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script type="module" src="src/script.js"></script>
+</body>
+</html>
