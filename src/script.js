@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Ensure elements exist by using type assertions
 const toggleButton = document.getElementById('toggle-skills');
 const skillsSection = document.getElementById('skills');
