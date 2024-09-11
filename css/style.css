@@ -83,3 +83,6 @@ input, textarea {
 a{
     text-decoration: none;
 }
+#download-pdf{
+    display:none;
+}

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your resume</title>
     <link rel="stylesheet" href="/css/style.css">
-    
+
+    <!-- Add jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div id="dynamic-resume-Builder">
@@ -22,25 +24,23 @@
 
 <h2>Education</h2>
 <label for="education">Education:</label>
-<textarea id="education" rows="4" placeholder="e.g., B.Sc in Computer Science from XYZ University"></textarea>
+<textarea id="education" rows="4" placeholder="e.g., B.Sc in Computer Science from XYZ University" required></textarea>
 
 <h2>Work Experience</h2>
 <label for="experience">Work Experience:</label>
-<textarea id="experience" rows="4" placeholder="e.g., Software Engineer at ABC Corp (2020-2023)"></textarea>
+<textarea id="experience" rows="4" placeholder="e.g., Software Engineer at ABC Corp (2020-2023)" required></textarea>
 
 <h2>Skills</h2>
 <label for="skills">Skills:</label>
-<input type="text" id="skills" placeholder="e.g., JavaScript, React, CSS">
-<button id="generateResumeBtn" type="button" onclick="generateResume()">Generate Resume</button>
-</form>
+<input type="text" id="skills" placeholder="e.g., JavaScript, React, CSS" required>
+<button id="generateResumeBtn" type="submit" onsubmit="generateResume(event)">Generate Resume</button>
+ </form>
 </section>
+<div id="resume-preview" class="resume-preview"></div>
+<button id="download-pdf"> download PDF</button>
 </div>
 
 
-
-<!-- Include jsPDF library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
-<script type="module" src="src/script.js"></script>
+<script type="module" src="/src/script2.js" defer></script>
 </body>
 </html>
